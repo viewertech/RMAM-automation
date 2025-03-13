@@ -27,18 +27,31 @@ All scripts include robust logging, error handling, and use a lock file mechanis
 
 # rman-automation
 │── scripts/
+
 │   ├── rman_backup_level0.sh
+
 │   ├── rman_backup_level1.sh
+
 │   ├── rman_archivelog.sh
+
 │   ├── rsync_backup.sh
+
 │   ├── rsync_fra.sh
+
 │   ├── trigger_restore.sh
+
 │── docs/
+
 │   ├── setup_guide.md
+
 │   ├── monitoring_logs.md
+
 │   ├── troubleshooting.md
+
 │── README.md
+
 │── .gitignore
+
 │── LICENSE
 
 
@@ -204,7 +217,7 @@ exit 0
 # Installation & Setup
 # 1️⃣ Clone the Repository
 bash
-git clone https://github.com/yourusername/rman-prod-dr.git
+git clone https://github.com/yourusername/RMAN-automation.git
 cd rman-prod-dr
 # 2️⃣ Configure Oracle Environment
 Modify the environment variables in the scripts (scripts/rman_backup_level0.sh, etc.).
