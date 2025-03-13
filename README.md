@@ -236,11 +236,11 @@ bash
 
 2.*/30 * * * * /home/oracle/scripts/rman_archivelog.sh
 
-0 * * * * /home/oracle/scripts/rsync_backup.sh
+3.0 * * * * /home/oracle/scripts/rsync_backup.sh
 
-0 2 * * 0 /home/oracle/scripts/rman_backup_level0.sh
+4.0 2 * * 0 /home/oracle/scripts/rman_backup_level0.sh
 
-0 */4 * * 1-6 /home/oracle/scripts/rman_backup_level1.sh
+5.0 */4 * * 1-6 /home/oracle/scripts/rman_backup_level1.sh
 
 # Monitoring & Logs
 Check Last Backup:	tail -f /archive/logs/rman_backup_*.log
