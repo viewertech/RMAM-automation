@@ -231,10 +231,15 @@ Update BACKUP_DIR path
 
 # Scheduling via Cron Jobs
 bash
-* * * * * /home/oracle/scripts/rsync_FRA.sh
-*/30 * * * * /home/oracle/scripts/rman_archivelog.sh
+
+1.* * * * * /home/oracle/scripts/rsync_FRA.sh
+
+2.*/30 * * * * /home/oracle/scripts/rman_archivelog.sh
+
 0 * * * * /home/oracle/scripts/rsync_backup.sh
+
 0 2 * * 0 /home/oracle/scripts/rman_backup_level0.sh
+
 0 */4 * * 1-6 /home/oracle/scripts/rman_backup_level1.sh
 
 # Monitoring & Logs
