@@ -218,7 +218,9 @@ exit 0
 # 1️⃣ Clone the Repository
 bash
 git clone https://github.com/yourusername/RMAN-automation.git
-cd rman-prod-dr
+
+cd RMAN-automation
+
 # 2️⃣ Configure Oracle Environment
 Modify the environment variables in the scripts (scripts/rman_backup_level0.sh, etc.).
 
